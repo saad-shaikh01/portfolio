@@ -1,24 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Navbar from './containers/navbar';
+import CustomButton from './components/buttons/button'
+import Hero from './containers/hero';
+import Counter from './components/counter';
+import ServicesSection from './containers/services';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar/>
+    <Hero />
+    <ServicesSection/>
+    <Counter number={300} duration={30} />
+    </>
   );
 }
 

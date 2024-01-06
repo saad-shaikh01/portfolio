@@ -1,0 +1,87 @@
+/* .button {
+    --b: 1px; 
+    --s: .15em; 
+    --c: #BD5532;
+    
+    padding: calc(.05em + var(--s)) calc(.3em + var(--s));
+    color: var(--c);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--c) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .2em;
+  }
+  .button:hover,
+  .button:focus-visible{
+    --_p: 0px;
+    outline-color: var(--c);
+    outline-offset: .05em;
+  }
+  .button:active {
+    background: var(--c);
+    color: #fff;
+  }
+  
+  .button {
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    cursor: pointer;
+    border: none;
+    margin: .1em;
+  } */
+
+
+  .custom-btn {
+    /* width: 130px; */
+    /* height: 40px; */
+    color: white !important;
+    border-radius: 5px;
+    /* padding: 10px 25px; */
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+
+  /* 16 */
+.btn-16 {
+  border: none;
+  color: #000;
+}
+.btn-16:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow:
+   -7px -7px 20px 0px rgba(71, 68, 68, 0.6),
+   -4px -4px 5px 0px rgba(70, 68, 68, 0.6),
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.btn-16:hover {
+  color: #000;
+}
+.btn-16:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.btn-16:active {
+  top: 2px;
+}
