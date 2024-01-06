@@ -45,7 +45,7 @@ const ServicesSection = () => {
         title={"Provide A Wide Range Of Services"}
         style={"text-center mb-14 mx-[30%]"}
       />
-      <div className="flex flex-wrap justify-center gap-8">
+      <div className="flex flex-wrap justify-center gap-8  pt-10 mt-10">
         {services.map((service, index) => (
           <div
             key={index}
