@@ -40,12 +40,12 @@ const ServicesSection = () => {
   ];
 
   return (
-    <div className="text-center py-12">
+    <div className="text-center py-12 ">
       <SubHeading
         title={"Provide A Wide Range Of Services"}
-        style={"text-center mb-14 mx-[30%]"}
+        style={"text-center  lg:mb-14 mx-[10%] md:mx-[20%] lg:mx-[30%]"}
       />
-      <div className="flex flex-wrap justify-center gap-8  pt-10 mt-10">
+      <div className="flex flex-wrap justify-center gap-4 lg:gap-8  lg:pt-10 lg:mt-10">
         {services.map((service, index) => (
           <div
             key={index}

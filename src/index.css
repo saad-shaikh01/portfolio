@@ -16,3 +16,8 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.Main {
+  background-image: url('./assets/hero_bg-11.38c5c044.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}

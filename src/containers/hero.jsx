@@ -13,7 +13,7 @@ export default function hero() {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-center lg:justify-between px-14 py-8">
       {/* Left side: Content */}
-      <div className="lg:w-1/2 mt-8 lg:mt-0">
+      <div className="w-1/2 lg:w-1/2 mt-8 lg:mt-0">
         <img
           className="mx-auto"
           src={`${require("../assets/hero/hero.png")}`}
@@ -22,16 +22,16 @@ export default function hero() {
       </div>
 
       <div className="lg:w-1/2 lg:mr-8">
-        <h1 className="text-2xl lg:text-[34px] text-center font-space-grotesk lg:text-left mb-4 text-[#018aff]">
+        <h1 className="mt-10 text-2xl lg:text-[34px] text-center font-space-grotesk lg:text-left mb-4 text-[#018aff]">
           I'm Tom Brady
         </h1>
-        <PrimaryHeading title={"Software Developer"}/>
+        <PrimaryHeading title={"Software Developer"} style={""}/>
 
         <CustomButton title={"Get into touch"} style={"mb-10 mt-2"} />
 
-        <div className="flex flex-wrap justify-center lg:justify-start">
+        <div className="flex  flex-wrap  justify-center lg:justify-start">
           {CounterContent.map(([number, duration, title]) => (
-            <div className="text-center lg:text-left mx-4 mb-4">
+            <div className="   text-center lg:text-left mx-4 mb-4">
               {/* <Counter number={300} duration={30} /> */}
               <span className="block  font-bold">
                 <Counter number={number} duration={duration} />
